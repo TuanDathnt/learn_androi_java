@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".baitap_b3.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center">
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:text="Dang ky tai khoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="12dp"
+            android:hint="Ten tai khoan"
+            android:id="@+id/edtName"
+            android:background="@drawable/shape_edittext"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:background="@drawable/shape_edittext"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:hint="Nhap mat khau"
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="textPassword"
+            android:background="@drawable/shape_edittext"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="12dp"
+            android:hint="Nhap lai mat khau"
+            android:id="@+id/edtPassAgain"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_marginStart="16dp"
+            android:textColor="#E40000"
+            tools:text="mat khau khong trung khop"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tieptuc"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:hint="Tiep Tuc"
+            android:textSize="20dp"
+            android:backgroundTint="#1F9FFC"
+            android:background="@drawable/shape_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></TextView>
+    </LinearLayout>
+
+</FrameLayout>

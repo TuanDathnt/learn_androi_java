@@ -4,8 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Doc" />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Ngang" />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="grid" />
+    <Button
+        android:id="@+id/btnKotlin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="grid" />
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
@@ -16,9 +37,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnClickMe"
-        android:layout_width="154dp"
-        android:layout_height="100sp"
-        android:text="Click me" />
 </LinearLayout>
