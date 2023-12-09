@@ -16,6 +16,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".buoi6.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buoi6.Buoi6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".btvn5.UpdateUseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".btvn5.updateUserActivity"
+            android:exported="false" />
+        <activity
             android:name=".buoi5.KotlinActivity"
             android:exported="false" />
         <activity

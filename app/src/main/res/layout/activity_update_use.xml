@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".btvn5.UpdateUseActivity">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:title="Ca nhan hoa"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+    <View
+        android:id="@+id/Divier"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ScrollView
+        android:id="@+id/btnUpdate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnUpdate"
+        android:layout_below="@+id/Divier">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_food"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/do_tuan_dat"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+                app:layout_constraintTop_toTopOf="@id/ivAvatar">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_vector_avatar"
+                android:drawablePadding="4dp"
+                android:text="Cong dan cua tinh"
+                app:layout_constraintEnd_toEndOf="@id/tvName"
+                app:layout_constraintStart_toStartOf="@id/tvName"
+                app:layout_constraintTop_toBottomOf="@+id/tvName">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Các thông tin các nhân chính xác giúp chúng tôi mang lại cho bạn những thông tin thú vị chính xác theo đúng thông tin của bạn."
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/tvName"
+                app:layout_constraintStart_toStartOf="@id/ivAvatar"
+                app:layout_constraintTop_toBottomOf="@id/ivAvatar">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFullname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/full_name_title"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/tvName"
+                app:layout_constraintStart_toStartOf="@id/ivAvatar"
+                app:layout_constraintTop_toBottomOf="@id/tvContent">
+            </TextView>
+
+            <EditText
+                android:id="@+id/edtFullName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:hint="Nguyen Van A"
+                android:paddingStart="16sp"
+                android:paddingTop="12dp"
+                android:inputType="text"
+                android:maxLength="50"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                app:layout_constraintEnd_toEndOf="@id/tvName"
+                app:layout_constraintStart_toStartOf="@id/tvFullname"
+                app:layout_constraintTop_toBottomOf="@id/tvFullname">
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvDateTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10sp"
+                android:text="Ngay sinh"
+                app:layout_constraintEnd_toStartOf="@id/tvPhoneTitle"
+
+                app:layout_constraintStart_toStartOf="@id/tvFullname"
+                app:layout_constraintTop_toBottomOf="@id/edtFullName">
+
+            </TextView>
+
+            <TextView
+
+                android:id="@+id/tvPhoneTitle"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="So DT"
+                app:layout_constraintEnd_toEndOf="@id/tvFullname"
+                app:layout_constraintStart_toEndOf="@+id/tvDateTitle"
+                app:layout_constraintTop_toTopOf="@id/tvDateTitle">
+
+            </TextView>
+
+            <TextView
+                android:datePickerMode="calendar"
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:drawableEnd="@drawable/ic_vector_avatar"
+                android:hint="27/10/1999"
+                android:paddingStart="16sp"
+                android:paddingTop="12dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                app:layout_constraintEnd_toEndOf="@id/tvDateTitle"
+                app:layout_constraintStart_toStartOf="@id/tvDateTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvDateTitle">
+            </TextView>
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/edtPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:hint="012455768"
+                android:maxLength="10"
+
+                android:paddingStart="16sp"
+                android:paddingTop="12dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                app:layout_constraintEnd_toEndOf="@id/tvPhoneTitle"
+                app:layout_constraintStart_toStartOf="@id/tvPhoneTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvPhoneTitle">
+            </EditText>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <TextView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="#EB856A"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:id="@+id/btnUpdate"
+        android:text="Cap nhap thong tin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+</RelativeLayout>

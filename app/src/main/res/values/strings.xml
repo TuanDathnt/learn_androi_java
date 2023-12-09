@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Leanr-android-java</string>
+    <string name="do_tuan_dat">Do Tuan Dat</string>
+    <string name="full_name_title">Ho ten day du <font color='#E40000'>*</font></string>
 </resources>

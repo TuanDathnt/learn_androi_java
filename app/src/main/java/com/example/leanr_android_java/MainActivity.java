@@ -8,9 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.leanr_android_java.btvn5.UpdateUseActivity;
 import com.example.leanr_android_java.buoi4.GridActivity;
 import com.example.leanr_android_java.buoi4.HorizontalActivity;
 import com.example.leanr_android_java.buoi5.KotlinActivity;
+import com.example.leanr_android_java.buoi6.Buoi6Activity;
 import com.example.leanr_android_java.recycleview.MainActivity5;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         btn3.setOnClickListener(view ->{
-            Intent intent = new Intent(this, GridActivity.class);
+            Intent intent = new Intent(this, Buoi6Activity.class);
             startActivity(intent);
         });
         findViewById(R.id.btnKotlin).setOnClickListener(v->{
-            startActivity(new Intent(this, KotlinActivity.class));
+            startActivity(new Intent(this, UpdateUseActivity.class));
         });
     }
 
