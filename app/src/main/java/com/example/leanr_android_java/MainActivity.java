@@ -13,12 +13,14 @@ import com.example.leanr_android_java.buoi4.GridActivity;
 import com.example.leanr_android_java.buoi4.HorizontalActivity;
 import com.example.leanr_android_java.buoi5.KotlinActivity;
 import com.example.leanr_android_java.buoi6.Buoi6Activity;
+import com.example.leanr_android_java.buoi7.Buoi7Activity;
 import com.example.leanr_android_java.recycleview.MainActivity5;
 
 public class MainActivity extends AppCompatActivity {
     private Button btn2;
     private Button btn3;
     private Button btn1;
+    private Button btn7;
 
     private TextView tvName;
 
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
         btn1 = findViewById(R.id.btn1);
-
+        btn7 = findViewById(R.id.btnBuoi7);
         btn1.setOnClickListener(view->{
             Intent intent = new Intent(this, MainActivity5.class);
             startActivity(intent);
@@ -40,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         });
         btn3.setOnClickListener(view ->{
             Intent intent = new Intent(this, Buoi6Activity.class);
+            startActivity(intent);
+        });
+        btn7.setOnClickListener(view->{
+            Intent intent = new Intent(this, Buoi7Activity.class);
             startActivity(intent);
         });
         findViewById(R.id.btnKotlin).setOnClickListener(v->{
